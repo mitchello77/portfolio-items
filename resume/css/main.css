@@ -1,0 +1,147 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f5f2ed;
+  margin: 50px 0;
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'Lato', 'Helvetica' , 'Arial', sans-serif;
+  color: #000000;
+}
+.wrap {
+  max-width: 960px;
+  min-width: 760px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #FFFFF9;
+  box-shadow: 0 0.3em 0.3em #AAA;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 1em;
+  background-color: #EEEEEE;
+  box-sizing: border-box;
+  padding: 1.5em 3em;
+  color: #4C4C4E;
+}
+
+header ul {
+  display: inline;
+  float: right;
+  text-align: right;
+}
+
+header ul li {
+  padding-bottom: 0.5rem;
+  color: inherit;
+}
+
+header ul li:last-child {
+  padding-bottom: 0;
+}
+
+header ul li img {
+  max-width: 1.3em;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+h1 {
+  font-weight: 700;
+  display: inline;
+  float: left;
+  color: inherit;
+  font-size: 5.6rem;
+  margin-top: 0.3em;
+}
+
+h2 {
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    font-size: 2.2em;
+    color: #2E74B5;
+}
+
+h2 span {
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+h2:before {
+  background: #2E74B5;
+  content: "";
+  display: block;
+  height: 0.1rem;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+h2:before {
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  background-color: #fff;
+  padding: 0 3em;
+  padding-bottom: 1.5em;
+  box-sizing: border-box;
+}
+
+#tabulated .row {
+      padding-bottom: 1em;
+      display: table;
+      width: 100%;
+}
+
+#tabulated .row .col-dates {
+    display: table-cell;
+    width: 15rem;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 1.5rem;
+    color: #606061;
+    font-weight: 300;
+}
+
+#tabulated .row .col-info {
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+#tabulated .row .col-info p:first-child {
+  font-weight: bolder;;
+  font-size: 1.8rem;
+}
+
+#export {
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#export div {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  float: right;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}

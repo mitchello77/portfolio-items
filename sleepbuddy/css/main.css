@@ -1,0 +1,522 @@
+/*
+Main Stylesheet
+Mitchell Williams-Millar
+*/
+
+body {
+    background: #181818;
+}
+.container {
+    padding-left: 4rem;
+    box-sizing: border-box;
+    display: inline-table;
+}
+.fp-tableCell {
+    vertical-align: top !important;
+}
+.center {
+    text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 550px) {
+    .container {
+        padding-left: 0;
+        height: 100vh;
+        display: block;
+    }
+}
+
+/* Nav */
+
+nav {
+    position: fixed;
+    left: -1.8rem;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    background: #000000;
+    opacity: 0.5;
+    transition: all 0.75s;
+    z-index: 1000;
+    border-right: 0.2rem solid White;
+}
+nav:hover {
+    opacity: 1;
+    transition: all 0.25s;
+    left: 0;
+    border-right: none;
+}
+nav ul {
+    list-style: none;
+    display: block;
+}
+nav li {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+nav li.active button {
+    transition: all 0.5s;
+    border: 1.2rem solid;
+    border-color: inherit;
+}
+nav button {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin: 3rem auto;
+    padding: 0;
+    border-radius: 1.2rem;
+    border: none;
+    border: 0.2rem solid;
+    border-color: inherit;
+    display: block;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+nav button:hover {
+    transition: all 0.5s;
+    border: 1.2rem solid;
+    border-color: inherit;
+    cursor: pointer;
+}
+
+/*  General */
+
+.title {
+    height: 20%;
+}
+.title h2 {
+    padding-top: 1rem;
+    width: 100%;
+}
+.title p.subline {
+    font-size: 2rem;
+}
+.columns {
+    height: 100%;
+}
+.absolute {
+    position: absolute;
+}
+
+/* Section-Intro */
+
+#intro h1 {
+    margin-bottom: 5rem;
+}
+#intro .row .column .icon {
+    width: 25%;
+    margin: 0 auto;
+}
+#intro .row {
+    margin-bottom: 5rem;
+}
+#intro .row:last-child {
+    margin-bottom: 0;
+}
+
+/* Section-Brain */
+
+#brain .brainContainer {
+    height: 100%;
+}
+#brain .brainContainer object {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+}
+#brain .info {
+    height: 20%;
+}
+#brain .info-container {
+    padding-top: 2rem;
+}
+#brain .info-container h4 {
+    text-align: center;
+}
+#brain .info-container p {
+    width: 85%;
+    margin: 0 auto;
+    border: 0.2rem solid White;
+    border-radius: 1rem;
+    padding: 1em
+}
+#brain .content {
+    height: 50%;
+}
+@media (min-width: 550px) {
+    #brain .info-container p {
+        width: 70%;
+    }
+}
+
+/* SVG CSS */
+
+#svgBrain g:first-child {
+    transition: all 0.25s;
+    opacity: 0.7;
+}
+#svgBrain g:first-child:hover {
+    opacity: 1 !important;
+    transition: all 0.5s;
+}
+#svgBrain .active {
+    transition: all 0.5s;
+    opacity: 1 !important;
+}
+#svgBrain .inactive {
+    transition: all 0.5s;
+    opacity: 0.1 !important;
+}
+
+/* Section-Product */
+
+#product .product-wrap {
+    position: relative;
+}
+
+#product .overlay-content {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#product .overlay-content .target:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    opacity: 0.8;
+}
+#product .overlay-content .target {
+    width: 10%;
+    position: absolute;
+    cursor: pointer;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-play-state: running;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-play-state: running;
+    opacity: 0.4;
+}
+
+/* Section-Interfaces */
+
+#interfaces .content {
+    height: 70%;
+}
+#interfaces .summary {
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    border-top: 0.2rem solid White;
+}
+#interfaces .sliderbtn img {
+    cursor: pointer;
+}
+#interfaces .sliderbtn img:active {
+    -ms-transform: scale(0.9, 0.9);
+    /* IE 9 */
+    -webkit-transform: scale(0.9, 0.9);
+    /* Chrome, Safari, Opera */
+    transform: scale(0.9, 0.9);
+}
+
+/* Section-Simulation */
+
+#simulation .bg-phone {
+    position: relative;
+    width: auto;
+    height: 100%;
+    display: inline-block;
+}
+@media (max-width: 550px) {
+    #simulation .bg-phone {
+        max-height: 668px;
+    }
+}
+#simulation .bg-phone img {
+    display: block;
+    height: 100%;
+}
+@media (max-width: 550px) {
+    #simulation .bg-phone img {
+        width: 100%
+    }
+}
+#simulation .bg-phone .overlay-content {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    height: inherit;
+    width: inherit;
+    padding-left: 6.45%;
+    padding-right: 6.45%;
+    padding-top: 30%;
+    padding-bottom: 33.7%;
+}
+#simulation .bg-phone .overlay-content .wrap {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+#simulation .bg-phone .overlay-content .tile {
+    width: 95%;
+    margin: 0 auto;
+    height: 10%;
+    position: relative;
+    border-bottom: 0.2rem solid #fff;
+}
+#simulation .bg-phone .overlay-content .tile:nth-last-child(2) {
+    border-bottom: none;
+}
+#simulation .bg-phone .overlay-content .tile:first-child {
+    margin-top: 3%;
+}
+#simulation .bg-phone .overlay-content .tile p {
+    margin: 0;
+    color: #CCC;
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding-left: 1rem;
+}
+#simulation .bg-phone .overlay-content .expandable-content {
+    padding: 1rem;
+    width: 95%;
+    margin: 0 auto;
+    min-height: 50px;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    display: none;
+    border-bottom: 0.2rem solid #fff;
+}
+
+#simulation .bg-phone .overlay-content .expandable-content #picker {
+  margin: 0 auto;
+  width: 200px;
+}
+#simulation .bg-phone .overlay-content .tile span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5%;
+}
+#simulation .content {
+    height: 75%;
+}
+.toggle-button {
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 20px;
+    border: 2px solid #D0D0D0;
+    height: 24px;
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+.toggle-button button {
+    cursor: pointer;
+    outline: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    float: left;
+    margin: -3px 0 0 -3px;
+    border: none;
+    border: 2px solid #D0D0D0;
+    transition: left 0.3s;
+    padding: 0;
+}
+.toggle-button-selected {
+    background-color: #83B152;
+    border: 2px solid #7DA652;
+}
+.toggle-button-selected button {
+    left: 26px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+#simulation .environment-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+#simulation .environment-wrap .bed-bg {
+    width: 100%;
+    height: 100%;
+    background: url('../img/bed.png') no-repeat center;
+    background-size: contain;
+}
+
+#simulation .environment-wrap .overlay-content {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    height: inherit;
+    width: inherit;
+}
+
+#simulation .environment-wrap .overlay-content #environment-svg {
+  top: 18%;
+  position: absolute;
+}
+
+#simulation .environment-wrap .overlay-content .heart {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  width: 10%;
+  -webkit-animation-name: heartbeat;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-play-state: running;
+  -moz-animation-name: heartbeat;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-play-state: running;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+@-webkit-keyframes heartbeat
+{
+  0%
+  {
+    -webkit-transform: scale( .75 );
+  }
+  20%
+  {
+    -webkit-transform: scale( 1 );
+  }
+  40%
+  {
+    -webkit-transform: scale( .75 );
+  }
+  60%
+  {
+    -webkit-transform: scale( 1 );
+  }
+  80%
+  {
+    -webkit-transform: scale( .75 );
+  }
+  100%
+  {
+    -webkit-transform: scale( .75 );
+  }
+}
+
+.stopanimation {
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+}
+/* Media Queries */
+
+
+/* mobile */
+
+@media (max-width: 550px) {
+    .sliderbtn {
+        display: none;
+    }
+}
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}

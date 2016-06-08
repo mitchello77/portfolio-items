@@ -1,0 +1,3 @@
+Best view at a 16:9 aspect ratio. 
+Tested on and appears correctly on chrome and firefox.
+Also need to be on the net. I access CDN's for JS library and type

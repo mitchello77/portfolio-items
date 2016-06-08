@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Save The Pollutants - Pete</title>
+        <meta name="description" content="Save The Pollutants">
+        <meta name="author" content="Mitchell Williams-Millar">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,300|Open+Sans:400,400italic,300,600' rel='stylesheet' type='text/css'>
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>
+        <style>
+            .edgeLoad-pete_scene_2 { visibility:hidden; }
+        </style>
+    </head>
+    <body>
+        <div id="underwater" class="container-fill">
+            <div class="bg-elements">
+                <img src="img/light.svg" class="lights">
+            </div>
+
+            <div id="Stage" class="pete_scene_2">
+            <div class="nav">
+                <a href="pete_story.html"><img src="img/nav_backwards.svg" class="overlay" title="Go Backwards"></a>
+                <a href=""><img src="img/nav_restart.svg" id="restart" title="Restart Scene"></a>
+                <a href="index.html#character-selection"><img src="img/nav_home.svg" class="overlay" title="Return to Character Selection"></a>
+                <a href="pete_story_3.html"><img src="img/nav_forward.svg" class="overlay" title="Progress"></a>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.0.2.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+               AdobeEdge.loadComposition('2', 'pete_scene_2', {
+                scaleToFit: "none",
+                centerStage: "both",
+                minW: "500px",
+                maxW: "undefined",
+                width: "100%",
+                height: "100%"
+            }, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","1600px","900px"],"fill":["rgba(255,255,255,1)"]}},"dom":[{"rect":["46.7%","48.2%","6.6%","3.4%","auto","auto"],"id":"preloader22","fill":["rgba(0,0,0,0)","img/preloader22.gif","0px","0px"],"type":"image","tag":"img"}]}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","1600px","900px"],"fill":["rgba(255,255,255,1)"]}},"dom":{}});
+            $('#restart').click(function() {
+              $.Edge.play();
+            });
+        </script>
+    </body>
+</html>
