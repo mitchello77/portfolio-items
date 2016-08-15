@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Resets/Fixs */
 * { padding: 0; margin: 0; border:0}
-header, section, footer, aside, nav, main, article, figure {display: block;} 
+header, section, footer, aside, nav, main, article, figure {display: block;}
 a {text-decoration:none}
 html, body {height:100%}
 a:active, a:hover {outline: 0}
@@ -16,10 +16,10 @@ body {
 	background: #ECF0F1;
 	font-size: 13px;
 	text-align: center;
-	 
+
 }
 
-p { 
+p {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	line-height: 16px;
@@ -51,11 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: url("images/logo.png") no-repeat left top;
 	display: inline-block;
 	float: left;
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+}
+
+#head-main .logo-wrap {
+	padding-top: 20px;
 }
 
 .loginbox {
@@ -92,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .field button:active {
-	border-style: inset; 
+	border-style: inset;
 }
 
 .field .register {
@@ -120,11 +119,6 @@ h1 {
 	padding: 10px 10px 10px 20px;
 	font-weight: 500;
 	font-size: 60px;
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
 }
 
 h2 {
@@ -187,7 +181,7 @@ nav li {
 	margin: 0 10px;
 	display: block;
 	text-align: center;
-	
+
 }
 
 nav a {
@@ -328,7 +322,7 @@ article p a:hover {
     -o-transform: scale(1.05);
     transform: scale(1.05);
 }
-	
+
 
 #info table {
 	width: 100%;
