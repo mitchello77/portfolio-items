@@ -89,9 +89,9 @@ h2:before {
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1em;
-  
+
 }
 
 a {
@@ -132,18 +132,8 @@ section {
   font-size: 1.8rem;
 }
 
-#export {
-  max-width: 960px;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 2em;
-}
-
-#export div {
-  width: 200px;
-  height: 100px;
-  background-color: red;
-  float: right;
+#list ul,#list ol {
+  margin-left: 1rem;
 }
 
 .clearfix:after {
@@ -162,4 +152,18 @@ ul.dash > li:before {
     content: "-";
     width: 1em;
     margin-left: -1em;
+}
+
+#export {
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#export div {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  float: right;
 }
