@@ -5,12 +5,20 @@
   "deleteLocal": false,
   "hostname": "ftp.mitchell-williams.com.au",
   "port": "21",
+<<<<<<< HEAD
+=======
+  "target": "/public_html/resume",
+>>>>>>> origin/master
   "ignore": [
     ".remote-sync.json",
     ".git/**"
   ],
   "username": "atom@mitchell-williams.com.au",
   "password": "!atom1",
+<<<<<<< HEAD
   "watch": [],
   "target": "/public_html/resume/"
+=======
+  "watch": []
+>>>>>>> origin/master
 }
