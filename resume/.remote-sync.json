@@ -1,0 +1,16 @@
+{
+  "transport": "ftp",
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "ftp.mitchell-williams.com.au",
+  "port": "21",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "atom@mitchell-williams.com.au",
+  "password": "!atom1",
+  "watch": [],
+  "target": "/public_html/resume/"
+}
