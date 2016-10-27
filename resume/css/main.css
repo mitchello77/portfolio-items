@@ -88,6 +88,12 @@ h2:before {
   left: 0;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 1em;
+
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -126,6 +132,28 @@ section {
   font-size: 1.8rem;
 }
 
+#list ul,#list ol {
+  margin-left: 1rem;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+ul.dash {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+ul.dash > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
 #export {
   max-width: 960px;
   width: 90%;
@@ -138,10 +166,4 @@ section {
   height: 100px;
   background-color: red;
   float: right;
-}
-
-.clearfix:after {
-    content:" ";
-    display:block;
-    clear:both;
 }
